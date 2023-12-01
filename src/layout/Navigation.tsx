@@ -73,7 +73,7 @@ export default function Navigation() {
   return (
     <header className="bg-transparent">
       <nav
-        className="mx-auto flex w-full lg:w-11/12 3xl:w-6/12 items-center justify-between p-6 fixed left-1/2 -translate-x-1/2 z-10"
+        className="mx-auto flex w-full lg:w-11/12 3xl:w-6/12 items-center justify-between p-6 fixed left-1/2 -translate-x-1/2 z-20"
         aria-label="Global"
       >
         <div className="flex items-center gap-1 lg:flex-1">
@@ -131,7 +131,7 @@ export default function Navigation() {
               leaveFrom="opacity-100 translate-y-0"
               leaveTo="opacity-0 translate-y-1"
             >
-              <Popover.Panel className="absolute -left-8 top-full z-10 mt-3 w-screen max-w-md overflow-hidden rounded-lg bg-white shadow-lg ring-1 ring-gray-900/5">
+              <Popover.Panel className="absolute -left-8 top-full z-20 mt-3 w-screen max-w-md overflow-hidden rounded-lg bg-white shadow-lg ring-1 ring-gray-900/5">
                 <div className="p-4">
                   {projects.map((item) => (
                     <div
@@ -194,7 +194,7 @@ export default function Navigation() {
         open={mobileMenuOpen}
         onClose={setMobileMenuOpen}
       >
-        <div className="fixed inset-0 z-10" />
+        <div className="fixed inset-0 z-20" />
         <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
             <a href="#" className="-m-1.5 p-1.5">
