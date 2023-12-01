@@ -103,13 +103,13 @@ export default function Navigation() {
           </button>
         </div>
         <Popover.Group className="hidden lg:flex lg:gap-x-12 mt-1.5">
-          <a href="#" className="text-xl leading-6">
+          <a href="#sevices" className="text-xl leading-6">
             Our Services
           </a>
-          <a href="#" className="text-xl leading-6">
+          <a href="#security" className="text-xl leading-6">
             Security Services
           </a>
-          <a href="#" className="text-xl leading-6">
+          <a href="#team" className="text-xl leading-6">
             Cryptech Team
           </a>
 

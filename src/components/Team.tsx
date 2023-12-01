@@ -61,7 +61,7 @@ const people = [
 
 export default function Team() {
   return (
-    <div className="relative py-10 sm:py-32">
+    <div id="team" className="relative py-10 sm:py-32">
       <div className="mx-auto 3xl:w-6/12 lg:w-11/12 items-center justify-center p-6 lg:px-8 min-h-full">
         <div className="absolute w-screen h-screen left-0 top-0 triangle-svg-projects -z-10 hidden lg:block" />
         <div className="absolute w-screen h-screen left-0 top-0 triangle-svg-projects-sub -z-10 hidden lg:block" />

@@ -62,7 +62,10 @@ const qoute = [
 
 export default function Security() {
   return (
-    <div className="relativ py-10 sm:py-32 bg-gradient-to-r from-cyan-500/25 to-emerald-600/25">
+    <div
+      id="security"
+      className="relativ py-10 sm:py-20 sm:pt-10 bg-gradient-to-r from-cyan-500/25 to-emerald-600/25"
+    >
       <div className="mx-auto 3xl:w-6/12 lg:w-11/12 items-center justify-center p-6 lg:px-8 min-h-full">
         <div className="w-full text-center">
           <h2 className="text-3xl font-bold tracking-tight sm:text-5xl text-transparent bg-clip-text bg-gradient-to-br from-cyan-500 to-emerald-600">
