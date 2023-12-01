@@ -3,9 +3,10 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
+  --foreground-rgb: rgb(243, 244, 246);
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --main-bg: rgb(13, 17, 23);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -18,10 +19,74 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: var(--main-bg);
+  font-family: "Ysabeau", sans-serif !important;
+  overflow-x: hidden;
+}
+
+.triangle-svg {
+  background: url("/images/1.png");
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+.triangle-svg-diamond {
+  background: url("/images/2.png");
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: 75%;
+  opacity: 50%;
+}
+
+.triangle-svg-diamond-reverse {
+  background: url("/images/2.png") !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  opacity: 50%;
+}
+
+.triangle-svg-projects {
+  position: absolute !important;
+  background: url("/images/2.png") !important;
+  background-repeat: no-repeat !important;
+  background-position: right center !important;
+  background-size: 150% !important;
+  top: 0 !important;
+  left: -20% !important;
+  transform: scaleX(-1);
+  opacity: 5%;
+}
+
+.triangle-svg-projects-sub {
+  position: absolute !important;
+  background: url("/images/2.png") !important;
+  background-repeat: no-repeat !important;
+  background-position: right center !important;
+  background-size: 100% !important;
+  top: 0 !important;
+  left: -20% !important;
+  transform: scaleX(-1);
+  opacity: 5%;
+}
+
+.team-svg {
+  height: 100%;
+  width: 50%;
+  opacity: 25%;
+  background: url("/images/2.png") !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  background-size: 150% !important;
+  opacity: 50%;
+}
+
+.team-svg-sub {
+  height: 100%;
+  width: 75%;
+  opacity: 25%;
+  background: url("/images/2.png") !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  background-size: 200% !important;
+  opacity: 25%;
 }
