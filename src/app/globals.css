@@ -90,3 +90,29 @@ body {
   background-size: 200% !important;
   opacity: 25%;
 }
+
+.security-svg {
+  height: 100%;
+  width: 115%;
+  opacity: 75%;
+  top: -10%;
+  z-index: -1;
+  content: url("/images/2.png") !important;
+  transform: scale(-1);
+  /* background: url("/images/2.png") !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  background-size: 200% !important; */
+}
+
+.security-svg-sub {
+  /* height: 100%;
+  width: 115%;
+  opacity: 75%;
+  z-index: -1;
+  content: url("/images/2.png") !important; */
+  /* background: url("/images/2.png") !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  background-size: 200% !important; */
+}
