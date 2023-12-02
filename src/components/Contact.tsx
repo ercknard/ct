@@ -89,7 +89,7 @@ export default function Contact() {
   return (
     <div
       id="contact"
-      className="py-20 lg:py-[120px] overflow-hidden relative z-10 3xl:w-6/12 lg:w-11/12 justify-center mx-auto"
+      className="py-20 lg:py-[120px] overflow-hidden relative z-10 3xl:w-6/12 lg:w-11/12 w-11/12 justify-center mx-auto"
     >
       <div className="container">
         <div className="flex flex-wrap lg:justify-between -mx-4">
@@ -108,7 +108,7 @@ export default function Contact() {
             </div>
           </div>
           <div className="w-full lg:w-1/2 xl:w-5/12 px-4">
-            <div className="bg-gray-900 relative rounded-lg pb-8 pt-4 sm:p-12 sm:pt-6 shadow-lg">
+            <div className="bg-gray-900 relative rounded-lg pb-8 pt-4 sm:p-12 sm:pt-6 shadow-lg p-4">
               <h2
                 className="
                   text-2xl text-center mb-4 font-bold tracking-tight sm:text-5xl text-transparent bg-clip-text bg-gradient-to-br from-cyan-500 to-emerald-600"
@@ -228,10 +228,12 @@ export default function Contact() {
                         text-white
                         bg-gradient-to-br from-cyan-500 to-emerald-600
                         rounded
-                        p-3
+                        lg:p-3
+                        p-1
                         transition
                         hover:bg-opacity-90
                         text-lg
+                        mb-4
                         "
                   >
                     Send Message
