@@ -178,7 +178,7 @@ body::-webkit-scrollbar-thumb {
   z-index: 20 !important;
 }
 
-.contact-svg::before {
+/* .contact-svg::before {
   content: "" !important;
   width: 100vw !important;
   height: 100% !important;
@@ -186,7 +186,7 @@ body::-webkit-scrollbar-thumb {
   top: 0 !important;
   left: 0 !important;
   background: linear-gradient(to bottom, black, transparent, black) !important;
-}
+} */
 
 .contact-svg::after {
   content: "" !important;
@@ -195,8 +195,18 @@ body::-webkit-scrollbar-thumb {
   position: absolute !important;
   top: 0 !important;
   right: 0 !important;
-  background: linear-gradient(to right, #06aeb8, #059f86, black) !important;
+  background: linear-gradient(to right, #06aeb875, #059f8675) !important;
   -webkit-clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0% 50%);
   clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0% 50%);
   z-index: -1;
+}
+
+.cube-svg-sub {
+  height: 100%;
+  width: 100vw !important;
+  opacity: 25%;
+  background: url("/images/iiisometric.svg") !important;
+  background-repeat: no-repeat !important;
+  background-position: right !important;
+  background-size: 100% !important;
 }

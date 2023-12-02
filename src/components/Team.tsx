@@ -62,9 +62,11 @@ const people = [
 export default function Team() {
   return (
     <div id="team" className="relative py-10 sm:py-32">
-      <div className="mx-auto 3xl:w-6/12 lg:w-11/12 items-center justify-center p-6 lg:px-8 min-h-full">
-        <div className="absolute w-screen h-screen left-0 top-0 triangle-svg-projects -z-10 hidden lg:block" />
-        <div className="absolute w-screen h-screen left-0 top-0 triangle-svg-projects-sub -z-10 hidden lg:block" />
+      <div className="mx-auto 3xl:w-6/12 lg:w-11/12 items-center justify-center p-6 pb-[10rem] lg:px-8 min-h-full">
+        {/* <div className="absolute w-screen h-screen left-0 top-0 triangle-svg-projects -z-10 hidden lg:block" />
+        <div className="absolute w-screen h-screen left-0 top-0 triangle-svg-projects-sub -z-10 hidden lg:block" /> */}
+        {/* <div className="absolute w-screen h-48 bg-gradient-to-b from-transparent to-black bottom-0 left-1/2 transform -translate-x-1/2" /> */}
+        {/* <div className="absolute w-screen h-48 bg-gradient-to-t from-transparent to-black top-0 left-1/2 transform -translate-x-1/2" /> */}
         <div className="w-full text-center">
           <h2 className="text-3xl font-bold tracking-tight sm:text-5xl text-transparent bg-clip-text bg-gradient-to-br from-cyan-500 to-emerald-600 relative z-[25]">
             Meet the Team

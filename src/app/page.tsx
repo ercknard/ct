@@ -5,6 +5,7 @@ import Security from "@/components/Security";
 import Services from "@/components/Services";
 import Footer from "@/layout/Footer";
 import Contact from "@/components/Contact";
+import Projects from "@/components/Projects";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
         <Landing />
         <Services />
         <Security />
+        {/* <Projects /> */}
         <Team />
         <Contact />
         <Footer />
