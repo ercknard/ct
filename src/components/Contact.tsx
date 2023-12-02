@@ -1,7 +1,91 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import Button from "@mui/material/Button";
 
 export default function Contact() {
+  const [fullname, setFullname] = useState("");
+  const [email, setEmail] = useState("");
+  const [subject, setSubject] = useState("");
+  const [message, setMessage] = useState("");
+
+  //   Form validation
+  const [errors, setErrors] = useState({} as any);
+
+  //   Setting button text
+  const [buttonText, setButtonText] = useState("Send");
+
+  const [showSuccessMessage, setShowSuccessMessage] = useState(false);
+  const [showFailureMessage, setShowFailureMessage] = useState(false);
+
+  const handleValidation = () => {
+    let tempErrors: any = {};
+    let isValid = true;
+
+    if (fullname.length <= 0) {
+      tempErrors["fullname"] = true;
+      isValid = false;
+    }
+    if (email.length <= 0) {
+      tempErrors["email"] = true;
+      isValid = false;
+    }
+    if (subject.length <= 0) {
+      tempErrors["subject"] = true;
+      isValid = false;
+    }
+    if (message.length <= 0) {
+      tempErrors["message"] = true;
+      isValid = false;
+    }
+
+    setErrors({ ...tempErrors });
+    console.log("errors", errors);
+    return isValid;
+  };
+
+  const handleSubmit = async (e: any) => {
+    e.preventDefault();
+
+    let isValidForm = handleValidation();
+
+    if (isValidForm) {
+      setButtonText("Sending");
+      const res = await fetch("/api/nodemailer", {
+        body: JSON.stringify({
+          email: email,
+          fullname: fullname,
+          subject: subject,
+          message: message,
+        }),
+        headers: {
+          "Content-Type": "application/json",
+        },
+        method: "POST",
+      });
+
+      const { error } = await res.json();
+      if (error) {
+        console.log(error);
+        setShowSuccessMessage(false);
+        setShowFailureMessage(true);
+        setButtonText("Send");
+
+        setFullname("");
+        setEmail("");
+        setMessage("");
+        setSubject("");
+        return;
+      }
+      setShowSuccessMessage(true);
+      setShowFailureMessage(false);
+      setButtonText("Send");
+      setFullname("");
+      setEmail("");
+      setMessage("");
+      setSubject("");
+    }
+    console.log(fullname, email, subject, message);
+  };
   return (
     <div
       id="contact"
@@ -36,6 +120,11 @@ export default function Contact() {
                   <input
                     type="text"
                     placeholder="Your Name"
+                    value={fullname}
+                    onChange={(e) => {
+                      setFullname(e.target.value);
+                    }}
+                    name="fullname"
                     className="
                         w-full
                         rounded
@@ -49,11 +138,19 @@ export default function Contact() {
                         bg-transparent
                         "
                   />
+                  {errors?.fullname && (
+                    <p className="text-red-500">Fullname cannot be empty.</p>
+                  )}
                 </div>
                 <div className="mb-6">
                   <input
                     type="email"
                     placeholder="Your Email"
+                    name="email"
+                    value={email}
+                    onChange={(e) => {
+                      setEmail(e.target.value);
+                    }}
                     className="
                         w-full
                         rounded
@@ -67,11 +164,19 @@ export default function Contact() {
                         bg-transparent
                         "
                   />
+                  {errors?.email && (
+                    <p className="text-red-500">Email cannot be empty.</p>
+                  )}
                 </div>
                 <div className="mb-6">
                   <input
                     type="text"
                     placeholder="Message Subject"
+                    name="subject"
+                    value={subject}
+                    onChange={(e) => {
+                      setSubject(e.target.value);
+                    }}
                     className="
                         w-full
                         rounded
@@ -85,10 +190,18 @@ export default function Contact() {
                         bg-transparent
                         "
                   />
+                  {errors?.subject && (
+                    <p className="text-red-500">Subject cannot be empty.</p>
+                  )}
                 </div>
                 <div className="mb-6">
                   <textarea
                     placeholder="Your Message"
+                    name="message"
+                    value={message}
+                    onChange={(e) => {
+                      setMessage(e.target.value);
+                    }}
                     className="
                         w-full
                         rounded
@@ -104,6 +217,9 @@ export default function Contact() {
                         "
                   ></textarea>
                 </div>
+                {errors?.message && (
+                  <p className="text-red-500">Message body cannot be empty.</p>
+                )}
                 <div>
                   <button
                     type="submit"
@@ -115,10 +231,26 @@ export default function Contact() {
                         p-3
                         transition
                         hover:bg-opacity-90
+                        text-lg
                         "
                   >
                     Send Message
                   </button>
+                </div>
+                <div className="text-left to-space-above">
+                  Alert message :{" "}
+                  <span>
+                    {showSuccessMessage && (
+                      <p className="text-green-500 font-semibold text-sm my-2">
+                        Thankyou! Your Message has been delivered.
+                      </p>
+                    )}
+                    {showFailureMessage && (
+                      <p className="text-red-500">
+                        Oops! Something went wrong, please try again.
+                      </p>
+                    )}
+                  </span>
                 </div>
               </form>
             </div>
