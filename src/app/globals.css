@@ -29,6 +29,23 @@ body {
   overflow-x: hidden;
 }
 
+body::-webkit-scrollbar {
+  width: 10px;
+  border-radius: 100px;
+}
+
+/* Track */
+body::-webkit-scrollbar-track {
+  position: absolute;
+  background: black;
+}
+
+/* Handle */
+body::-webkit-scrollbar-thumb {
+  background: #03668b;
+  border-radius: 100px;
+}
+
 .triangle-svg {
   background: url("/images/1.png");
   background-repeat: no-repeat;
