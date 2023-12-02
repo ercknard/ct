@@ -14,8 +14,8 @@ export default function Home() {
         <Landing />
         <Services />
         <Security />
-        {/* <Projects /> */}
         <Team />
+        <Projects />
         <Contact />
         <Footer />
       </main>
