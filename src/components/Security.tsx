@@ -83,32 +83,35 @@ export default function Security() {
         >
           {people.map((person) => (
             <li key={person.package_num}>
-              <div className="relative text-left gap-x-6 bg-gray-900 rounded-lg pt-16 pb-10 px-6 min-h-full flex flex-col justify-between">
+              <div className="relative text-left gap-x-6 bg-gray-900 rounded-lg pt-16 pb-5 px-6 min-h-full flex flex-col justify-between">
                 <div className="absolute lg:block right-0 top-0 team-svg hidden" />
                 <div className="absolute lg:block right-0 top-0 team-svg-sub hidden" />
-                <person.icon
+                {/* <person.icon
                   className="absolute -top-7 left-1/2 transform -translate-x-1/2 h-16 w-16 text-cyan-500 group-hover:text-emerald-600"
                   aria-hidden="true"
-                />
+                /> */}
                 <div>
-                  <h3 className="lg:uppercase lg:text-3xl mb-1 text-3xl font-semibold leading-10 tracking-tight">
+                  <h3 className="absolute left-1/2 transform -translate-x-1/2 -top-10 lg:uppercase lg:text-[7.5rem] mb-1 text-center text-3xl font-semibold leading-10 tracking-tight text-stroke lg:block hidden">
+                    {person.package_num}
+                  </h3>
+                  <h3 className="lg:uppercase lg:text-3xl mb-1 text-center text-3xl font-semibold leading-10 tracking-tight">
                     {person.title}
                   </h3>
-                  <h3 className="lg:uppercase lg:text-2xl mb-10 text-3xl font-semibold leading-10 tracking-tight text-transparent bg-clip-text bg-gradient-to-br from-cyan-500 to-emerald-600">
+                  <h3 className="lg:uppercase lg:text-2xl mb-10 text-center text-3xl font-semibold leading-10 tracking-tight text-transparent bg-clip-text bg-gradient-to-br from-cyan-500 to-emerald-600">
                     {person.title_1}
                   </h3>
                 </div>
-                <div className="relative grid grid-rows-4 gap-y-4 lg:bg-gray-800 lg:p-4 z-10 rounded-lg">
-                  <p className="lg:text-lg text-base text-slate-400">
+                <div className="relative grid grid-rows-4 lg:p-4 z-10 rounded-lg lg:bg-gray-900/95">
+                  <p className="lg:text-xl text-base text-slate-400 flex items-center">
                     {person.queue_1}
                   </p>
-                  <p className="lg:text-lg text-base text-slate-400">
+                  <p className="lg:text-xl text-base text-slate-400 flex items-center">
                     {person.queue_2}
                   </p>
-                  <p className="lg:text-lg text-base text-slate-400">
+                  <p className="lg:text-xl text-base text-slate-400 flex items-center">
                     {person.queue_3}
                   </p>
-                  <p className="lg:text-lg text-base text-slate-400">
+                  <p className="lg:text-xl text-base text-slate-400 flex items-center">
                     {person.queue_4}
                   </p>
                 </div>

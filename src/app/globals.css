@@ -81,7 +81,7 @@ body {
   background: url("/images/2.png") !important;
   background-repeat: no-repeat !important;
   background-position: center !important;
-  background-size: 150% !important;
+  background-size: 200% !important;
   opacity: 50%;
 }
 
@@ -92,8 +92,8 @@ body {
   background: url("/images/2.png") !important;
   background-repeat: no-repeat !important;
   background-position: center !important;
-  background-size: 200% !important;
-  opacity: 25%;
+  background-size: 300% !important;
+  opacity: 15%;
 }
 
 .security-svg {
@@ -120,4 +120,8 @@ body {
   background-repeat: no-repeat !important;
   background-position: center !important;
   background-size: 200% !important; */
+}
+
+.text-stroke {
+  -webkit-text-stroke: 1px rgb(6, 182, 212) !important;
 }

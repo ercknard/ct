@@ -84,7 +84,7 @@ export default function Team() {
                 <div className="absolute lg:block right-0 team-svg hidden" />
                 <div className="absolute lg:block right-0 team-svg-sub hidden" />
                 <Image
-                  className="lg:h-52 lg:w-52 h-40 w-40 bg-zinc-700 rounded-lg lg:border-l-8 border-gray-900"
+                  className="lg:h-52 lg:w-52 h-40 w-40 bg-zinc-700 rounded-lg"
                   src={person.imageUrl}
                   alt=""
                   width={846}
@@ -97,10 +97,10 @@ export default function Team() {
                   <p className="lg:text-2xl text-lg font-semibold mt-2 leading-8">
                     {person.role}
                   </p>
-                  <p className="lg:text-lg lg:mt-3 text-base text-slate-400">
+                  <p className="lg:text-xl lg:mt-3 text-base text-slate-400">
                     {person.subrole}
                   </p>
-                  <p className="lg:text-lg text-base text-slate-400">
+                  <p className="lg:text-xl text-base text-slate-400">
                     {person.secrole}
                   </p>
                 </div>
