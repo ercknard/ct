@@ -183,7 +183,7 @@ export default function Navigation() {
             variant="contained"
             className="rounded-full capitalize w-40 bg-gradient-to-br from-cyan-500 to-emerald-600"
           >
-            Contact Us
+            <a href="#contact">Contact Us</a>
           </Button>
         </div>
         {/* </div> */}
@@ -271,7 +271,7 @@ export default function Navigation() {
                   variant="contained"
                   className="bg-gradient-to-br from-cyan-500 to-emerald-600"
                 >
-                  Contact Us
+                  <a href="#contact">Contact Us</a>
                 </Button>
               </div>
             </div>

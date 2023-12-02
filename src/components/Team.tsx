@@ -61,7 +61,7 @@ const people = [
 
 export default function Team() {
   return (
-    <div id="team" className="relative py-10 lg:py-32">
+    <div id="team" className="relative py-10 lg:py-40">
       <div className="custom-shape-divider-bottom-1701539867 lg:block hidden">
         <svg
           data-name="Layer 1"
