@@ -3,6 +3,7 @@ import Landing from "@/components/Landing";
 import Team from "@/components/Team";
 import Security from "@/components/Security";
 import Services from "@/components/Services";
+import Footer from "@/layout/Footer";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
         <Services />
         <Security />
         <Team />
+        <Footer />
       </main>
     </>
   );

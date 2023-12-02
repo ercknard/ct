@@ -109,7 +109,7 @@ export default function Services() {
                   {person.title}
                 </h3>
                 <div className="relative lg:p-4 z-10">
-                  <p className="lg:text-xl text-base text-slate-400 text-center">
+                  <p className="lg:text-xl text-lg text-slate-400 text-center">
                     {person.description}
                   </p>
                 </div>

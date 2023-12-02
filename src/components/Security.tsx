@@ -102,16 +102,16 @@ export default function Security() {
                   </h3>
                 </div>
                 <div className="relative grid grid-rows-4 lg:p-4 z-10 rounded-lg lg:bg-gray-900/95">
-                  <p className="lg:text-xl text-base text-slate-400 flex items-center">
+                  <p className="lg:text-xl text-lg text-slate-400 flex items-center">
                     {person.queue_1}
                   </p>
-                  <p className="lg:text-xl text-base text-slate-400 flex items-center">
+                  <p className="lg:text-xl text-lg text-slate-400 flex items-center">
                     {person.queue_2}
                   </p>
-                  <p className="lg:text-xl text-base text-slate-400 flex items-center">
+                  <p className="lg:text-xl text-lg text-slate-400 flex items-center">
                     {person.queue_3}
                   </p>
-                  <p className="lg:text-xl text-base text-slate-400 flex items-center">
+                  <p className="lg:text-xl text-lg text-slate-400 flex items-center">
                     {person.queue_4}
                   </p>
                 </div>
