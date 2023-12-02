@@ -91,7 +91,7 @@ export default function Security() {
                   aria-hidden="true"
                 /> */}
                 <div>
-                  <h3 className="absolute left-1/2 transform -translate-x-1/2 -top-10 lg:uppercase lg:text-[7.5rem] mb-1 text-center text-3xl font-semibold leading-10 tracking-tight text-stroke lg:block hidden">
+                  <h3 className="absolute left-1/2 transform -translate-x-1/2 -top-10 lg:uppercase text-[7.5rem] mb-1 text-center font-semibold leading-10 tracking-tight text-stroke">
                     {person.package_num}
                   </h3>
                   <h3 className="lg:uppercase lg:text-3xl mb-1 text-center text-3xl font-semibold leading-10 tracking-tight">
