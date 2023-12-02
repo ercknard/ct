@@ -9,7 +9,7 @@ export default function Landing() {
       <div className="absolute w-screen h-screen left-0 top-0 triangle-svg-diamond-reverse -z-10 hidden lg:block" />
       {/* <div className="absolute w-screen h-screen left-0 top-0 triangle-svg-projects -z-10 hidden lg:block" /> */}
       <div className="absolute w-screen h-48 bg-gradient-to-b from-transparent to-black bottom-0 left-1/2 transform -translate-x-1/2" />
-      <div className="absolute w-screen h-48 bg-gradient-to-t from-transparent to-black top-0 left-1/2 transform -translate-x-1/2" />
+      {/* <div className="absolute w-screen h-48 bg-gradient-to-t from-transparent to-black top-0 left-1/2 transform -translate-x-1/2" /> */}
       <div className="flex mr-auto">
         <div className="w-full">
           <div className="text-left text-3xl lg:text-6xl ">Welcome to</div>
