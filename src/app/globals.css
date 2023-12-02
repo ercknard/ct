@@ -91,6 +91,30 @@ body::-webkit-scrollbar-thumb {
   opacity: 5%;
 }
 
+.triangles-svg-projects {
+  position: absolute !important;
+  content: url("/images/4.png") !important;
+  top: 0 !important;
+  left: -20% !important;
+  transform: scaleX(-1);
+  opacity: 25%;
+  z-index: 20 !important;
+  height: 110rem !important;
+  width: 110rem !important;
+}
+
+.triangles-svg-projects-sub {
+  position: absolute !important;
+  content: url("/images/4.png") !important;
+  top: -25% !important;
+  left: -20% !important;
+  transform: scaleX(-1);
+  opacity: 50%;
+  z-index: 20 !important;
+  height: 125rem !important;
+  width: 125rem !important;
+}
+
 .team-svg {
   height: 100%;
   width: 50%;

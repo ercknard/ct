@@ -66,10 +66,10 @@ export default function Team() {
         <div className="absolute w-screen h-screen left-0 top-0 triangle-svg-projects -z-10 hidden lg:block" />
         <div className="absolute w-screen h-screen left-0 top-0 triangle-svg-projects-sub -z-10 hidden lg:block" />
         <div className="w-full text-center">
-          <h2 className="text-3xl font-bold tracking-tight sm:text-5xl text-transparent bg-clip-text bg-gradient-to-br from-cyan-500 to-emerald-600">
+          <h2 className="text-3xl font-bold tracking-tight sm:text-5xl text-transparent bg-clip-text bg-gradient-to-br from-cyan-500 to-emerald-600 relative z-[25]">
             Meet the Team
           </h2>
-          <p className="mt-2 lg:text-2xl text-base leading-8">
+          <p className="mt-2 lg:text-2xl text-base leading-8 relative z-[25]">
             Please contact an Admin team member if you have an urgent request.
             Thank you.
           </p>
@@ -80,7 +80,7 @@ export default function Team() {
         >
           {people.map((person) => (
             <li key={person.name}>
-              <div className="relative flex text-left place-items-center gap-x-6 bg-gray-900 rounded-lg">
+              <div className="relative flex text-left place-items-center gap-x-6 bg-gray-900 rounded-lg z-[25]">
                 <div className="absolute lg:block right-0 team-svg hidden" />
                 <div className="absolute lg:block right-0 team-svg-sub hidden" />
                 <Image

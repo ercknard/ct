@@ -83,7 +83,7 @@ export default function Security() {
         >
           {people.map((person) => (
             <li key={person.package_num}>
-              <div className="relative text-left gap-x-6 bg-gray-900 rounded-lg pt-16 pb-5 px-6 min-h-full flex flex-col justify-between">
+              <div className="relative text-left gap-x-6 bg-gray-900 rounded-lg pt-16 pb-5 px-6 min-h-full flex flex-col justify-between z-[25]">
                 <div className="absolute lg:block right-0 top-0 team-svg hidden" />
                 <div className="absolute lg:block right-0 top-0 team-svg-sub hidden" />
                 {/* <person.icon
