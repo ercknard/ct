@@ -103,7 +103,7 @@ export default function Navigation() {
           </button>
         </div>
         <Popover.Group className="hidden lg:flex lg:gap-x-12 mt-1.5">
-          <a href="#sevices" className="text-xl leading-6">
+          <a href="#services" className="text-xl leading-6">
             Our Services
           </a>
           <a href="#security" className="text-xl leading-6">
@@ -220,19 +220,19 @@ export default function Navigation() {
             <div className="-my-6 divide-y divide-gray-500/10">
               <div className="space-y-2 py-6">
                 <a
-                  href="#"
+                  href="#services"
                   className="-mx-3 block rounded-lg px-3 py-2 text-lg font-semibold leading-7 text-gray-900 hover:bg-gray-100"
                 >
                   Our Services
                 </a>
                 <a
-                  href="#"
+                  href="#security"
                   className="-mx-3 block rounded-lg px-3 py-2 text-lg font-semibold leading-7 text-gray-900 hover:bg-gray-100"
                 >
                   Security Services
                 </a>
                 <a
-                  href="#"
+                  href="#team"
                   className="-mx-3 block rounded-lg px-3 py-2 text-lg font-semibold leading-7 text-gray-900 hover:bg-gray-100"
                 >
                   Cryptech Team
