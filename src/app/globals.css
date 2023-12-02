@@ -175,7 +175,7 @@ body::-webkit-scrollbar-thumb {
   top: 0 !important;
   left: 0 !important;
   background: linear-gradient(to bottom, black, transparent) !important;
-  z-index: 20 !important;
+  z-index: -1 !important;
 }
 
 /* .contact-svg::before {
@@ -209,4 +209,47 @@ body::-webkit-scrollbar-thumb {
   background-repeat: no-repeat !important;
   background-position: right !important;
   background-size: 100% !important;
+}
+
+.custom-shape-divider-bottom-1701539867 {
+  position: absolute !important;
+  top: -150px !important;
+  left: 0 !important;
+  width: 100vw !important;
+  overflow: hidden !important;
+  line-height: 0 !important;
+  transform: rotate(180deg) !important;
+  z-index: 25 !important;
+}
+
+.custom-shape-divider-bottom-1701539867 svg {
+  position: relative !important;
+  display: block !important;
+  width: calc(100vw + 1.3px) !important;
+  height: 150px !important;
+}
+
+.custom-shape-divider-bottom-1701539867 .shape-fill {
+  fill: #0d1117 !important;
+}
+
+.custom-shape-divider-top-1701545120 {
+  position: absolute;
+  bottom: -150px;
+  left: 0;
+  width: 100vw;
+  overflow: hidden;
+  line-height: 0;
+  z-index: 25 !important;
+}
+
+.custom-shape-divider-top-1701545120 svg {
+  position: relative;
+  display: block;
+  width: calc(100vw + 1.3px);
+  height: 150px;
+}
+
+.custom-shape-divider-top-1701545120 .shape-fill {
+  fill: #0d1117;
 }

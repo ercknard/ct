@@ -64,14 +64,14 @@ export default function Security() {
   return (
     <div
       id="security"
-      className="relative py-10 sm:py-20 bg-gradient-to-r from-cyan-500/25 to-emerald-600/25"
+      className="relative py-10 lg:py-40 bg-gradient-to-r from-cyan-500/25 to-emerald-600/25"
     >
       {/* <div className="absolute lg:block right-0 top-0 cube-svg-sub hidden" /> */}
       {/* <div className="absolute w-screen h-48 bg-gradient-to-t from-transparent to-black top-0 left-1/2 transform -translate-x-1/2" /> */}
       {/* <div className="absolute w-screen h-48 bg-gradient-to-b from-transparent to-black bottom-0 left-1/2 transform -translate-x-1/2" /> */}
       <div className="mx-auto 3xl:w-6/12 lg:w-11/12 items-center justify-center p-6 lg:px-8 min-h-full">
         <div className="w-full text-center">
-          <h2 className="text-3xl font-bold tracking-tight sm:text-5xl text-transparent bg-clip-text bg-gradient-to-br from-cyan-500 to-emerald-600">
+          <h2 className="text-3xl font-bold tracking-tight sm:text-5xl text-transparent bg-clip-text lg:mt-8 bg-gradient-to-br from-cyan-500 to-emerald-600">
             Security Services
           </h2>
           <p className="mt-2 lg:text-2xl text-base leading-8">
@@ -82,11 +82,11 @@ export default function Security() {
         </div>
         <ul
           role="list"
-          className="grid gap-x-8 gap-y-12 sm:grid-cols-3 sm:gap-y-16 xl:col-span-2 mt-12"
+          className="grid gap-x-8 gap-y-12 lg:grid-cols-3 sm:grid-cols-2 sm:gap-y-16 xl:col-span-2 mt-12"
         >
           {people.map((person) => (
             <li key={person.package_num}>
-              <div className="relative text-left gap-x-6 bg-gray-900 rounded-lg pt-16 pb-5 px-6 min-h-full flex flex-col justify-between z-[25]">
+              <div className="relative text-left gap-x-6 bg-gray-900 rounded-lg pt-16 pb-5 px-6 min-h-full flex flex-col justify-between ">
                 <div className="absolute lg:block right-0 top-0 team-svg hidden" />
                 <div className="absolute lg:block right-0 top-0 team-svg-sub hidden" />
                 {/* <person.icon

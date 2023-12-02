@@ -78,10 +78,33 @@ const qoute = [
 
 export default function Services() {
   return (
-    <div
-      id="services"
-      className="relative py-10 sm:py-20 sm:pt-10 bg-[black] z-[25]"
-    >
+    <div id="services" className="relative py-10 lg:py-40 sm:pt-10">
+      <div className="custom-shape-divider-bottom-1701539867 lg:block hidden">
+        <svg
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M1200 0L0 0 892.25 114.72 1200 0z"
+            className="shape-fill"
+          ></path>
+        </svg>
+      </div>
+      <div className="custom-shape-divider-top-1701545120 lg:block hidden">
+        <svg
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M1200 0L0 0 892.25 114.72 1200 0z"
+            className="shape-fill"
+          ></path>
+        </svg>
+      </div>
       <div className="mx-auto 3xl:w-6/12 lg:w-11/12 items-center justify-center p-6 lg:px-8 min-h-full">
         <div className="w-full text-center">
           <h2 className="text-3xl font-bold tracking-tight sm:text-5xl text-transparent bg-clip-text bg-gradient-to-br from-cyan-500 to-emerald-600">
@@ -97,7 +120,7 @@ export default function Services() {
         </div>
         <ul
           role="list"
-          className="grid gap-x-8 gap-y-12 sm:grid-cols-3 sm:gap-y-16 xl:col-span-2 mt-12"
+          className="grid gap-x-8 gap-y-12 lg:grid-cols-3 sm:grid-cols-2 sm:gap-y-16 xl:col-span-2 mt-12"
         >
           {people.map((person) => (
             <li key={person.services_num}>

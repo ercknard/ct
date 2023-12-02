@@ -62,7 +62,10 @@ const qoute = [
 
 export default function Projects() {
   return (
-    <div id="projects" className="relative py-10 sm:py-20  w-screen h-screen">
+    <div
+      id="projects"
+      className="relative py-10 lg:py-40  w-screen h-screen bg-gradient-to-r from-cyan-500/25 to-emerald-600/25"
+    >
       {" "}
       <div className="mx-auto 3xl:w-6/12 lg:w-11/12 items-center justify-center p-6 lg:px-8 min-h-full">
         <div className="w-full text-center">
