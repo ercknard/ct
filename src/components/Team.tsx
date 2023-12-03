@@ -61,8 +61,8 @@ const people = [
 
 export default function Team() {
   return (
-    <div id="team" className="relative py-10 lg:py-40">
-      <div className="custom-shape-divider-bottom-1701539867 lg:block hidden">
+    <div id="team" className="relative py-10 lg:py-10">
+      {/* <div className="custom-shape-divider-bottom-1701539867 lg:block hidden">
         <svg
           data-name="Layer 1"
           xmlns="http://www.w3.org/2000/svg"
@@ -87,7 +87,7 @@ export default function Team() {
             className="shape-fill"
           ></path>
         </svg>
-      </div>
+      </div> */}
       <div className="mx-auto 3xl:w-6/12 lg:w-11/12 items-center justify-center p-6 lg:px-8 min-h-full">
         {/* <div className="absolute w-screen h-screen left-0 top-0 triangle-svg-projects -z-10 hidden lg:block" />
         <div className="absolute w-screen h-screen left-0 top-0 triangle-svg-projects-sub -z-10 hidden lg:block" /> */}

@@ -89,7 +89,7 @@ export default function Contact() {
   return (
     <>
       <div className="relative">
-        <div className="custom-shape-divider-bottom-1701539867 lg:block hidden">
+        {/* <div className="custom-shape-divider-bottom-1701539867 lg:block hidden">
           <svg
             data-name="Layer 1"
             xmlns="http://www.w3.org/2000/svg"
@@ -101,8 +101,8 @@ export default function Contact() {
               className="shape-fill"
             ></path>
           </svg>
-        </div>
-        <div className="contact-svg" />
+        </div> */}
+        {/* <div className="contact-svg" /> */}
         <div
           id="contact"
           className="py-20 lg:py-[120px] overflow-hidden relative z-10 3xl:w-6/12 lg:w-11/12 w-11/12 justify-center mx-auto"

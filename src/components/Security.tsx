@@ -64,14 +64,14 @@ export default function Security() {
   return (
     <div
       id="security"
-      className="relative py-10 lg:py-40 bg-gradient-to-r from-cyan-500/25 to-emerald-600/25"
+      className="relative py-10 lg:py-10 bg-gradient-to-r from-cyan-500/25 to-emerald-600/25"
     >
       {/* <div className="absolute lg:block right-0 top-0 cube-svg-sub hidden" /> */}
       {/* <div className="absolute w-screen h-48 bg-gradient-to-t from-transparent to-black top-0 left-1/2 transform -translate-x-1/2" /> */}
       {/* <div className="absolute w-screen h-48 bg-gradient-to-b from-transparent to-black bottom-0 left-1/2 transform -translate-x-1/2" /> */}
       <div className="mx-auto 3xl:w-6/12 lg:w-11/12 items-center justify-center p-6 lg:px-8 min-h-full">
         <div className="w-full text-center">
-          <h2 className="text-3xl font-bold tracking-tight sm:text-5xl text-transparent bg-clip-text lg:mt-8 bg-gradient-to-br from-cyan-500 to-emerald-600">
+          <h2 className="text-3xl font-bold tracking-tight sm:text-5xl text-transparent bg-clip-text bg-gradient-to-br from-cyan-500 to-emerald-600">
             Security Services
           </h2>
           <p className="mt-2 lg:text-2xl text-base leading-8">

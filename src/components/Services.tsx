@@ -79,7 +79,7 @@ const qoute = [
 export default function Services() {
   return (
     <div id="services" className="relative py-10 lg:py-40 sm:pt-10">
-      <div className="custom-shape-divider-bottom-1701539867 lg:block hidden">
+      {/* <div className="custom-shape-divider-bottom-1701539867 lg:block hidden">
         <svg
           data-name="Layer 1"
           xmlns="http://www.w3.org/2000/svg"
@@ -104,7 +104,7 @@ export default function Services() {
             className="shape-fill"
           ></path>
         </svg>
-      </div>
+      </div> */}
       <div className="mx-auto 3xl:w-6/12 lg:w-11/12 items-center justify-center p-6 lg:px-8 min-h-full">
         <div className="w-full text-center">
           <h2 className="text-3xl font-bold tracking-tight sm:text-5xl text-transparent bg-clip-text bg-gradient-to-br from-cyan-500 to-emerald-600">
