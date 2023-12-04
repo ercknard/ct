@@ -131,14 +131,14 @@ export default function Navigation() {
               leaveFrom="opacity-100 translate-y-0"
               leaveTo="opacity-0 translate-y-1"
             >
-              <Popover.Panel className="absolute -left-8 top-full mt-3 w-screen max-w-md overflow-hidden rounded-lg bg-[#0d1117] shadow-lg ring-1 ring-gray-900/5">
+              <Popover.Panel className="absolute -left-8 top-full mt-3 w-screen max-w-md overflow-hidden rounded-lg  bg-[#111827] shadow-lg ring-1 ring-gray-900/5">
                 <div className="p-4">
                   {projects.map((item) => (
                     <div
                       key={item.name}
-                      className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-[#111827]"
+                      className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-[#0d111750]"
                     >
-                      <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-bg-[#111827] group-hover:bg-white">
+                      <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-bg-[#111827] group-hover:bg-[#111827]">
                         <item.icon
                           className="h-6 w-6 text-gray-500 group-hover:text-cyan-500"
                           aria-hidden="true"
@@ -195,7 +195,7 @@ export default function Navigation() {
         onClose={setMobileMenuOpen}
       >
         <div className="fixed inset-0" />
-        <Dialog.Panel className="fixed inset-y-0 right-0 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+        <Dialog.Panel className="fixed inset-y-0 right-0 w-full overflow-y-auto bg-[#111827] px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
             <a href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">Cryptech Services</span>
@@ -221,26 +221,26 @@ export default function Navigation() {
               <div className="space-y-2 py-6">
                 <a
                   href="#services"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-lg font-semibold leading-7 text-gray-900 hover:bg-gray-100"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-lg font-semibold leading-7 text-gray-100 hover:bg-[#0d111750]"
                 >
                   Our Services
                 </a>
                 <a
                   href="#security"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-lg font-semibold leading-7 text-gray-900 hover:bg-gray-100"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-lg font-semibold leading-7 text-gray-100 hover:bg-[#0d111750]"
                 >
                   Security Services
                 </a>
                 <a
                   href="#team"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-lg font-semibold leading-7 text-gray-900 hover:bg-gray-100"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-lg font-semibold leading-7 text-gray-100 hover:bg-[#0d111750]"
                 >
                   Cryptech Team
                 </a>
                 <Disclosure as="div" className="-mx-3">
                   {({ open }) => (
                     <>
-                      <Disclosure.Button className="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-lg font-semibold leading-7 text-gray-900 hover:bg-gray-100">
+                      <Disclosure.Button className="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-lg font-semibold leading-7 text-gray-100 hover:bg-[#0d1117]">
                         Projects
                         <ChevronDownIcon
                           className={classNames(
@@ -256,7 +256,7 @@ export default function Navigation() {
                             key={item.name}
                             as="a"
                             href={item.href}
-                            className="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                            className="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-100 hover:bg-gray-50"
                           >
                             {item.name}
                           </Disclosure.Button>
