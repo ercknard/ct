@@ -104,7 +104,7 @@ export default function Security() {
                     {person.title_1}
                   </h3>
                 </div>
-                <div className="relative grid grid-rows-4 lg:p-4 lg:pt-8 z-10 rounded-lg lg:bg-gray-900/95">
+                <div className="relative grid grid-rows-4 lg:p-4 lg:pt-8 z-10 rounded-lg lg:bg-gray-900">
                   <p className="lg:text-xl text-lg text-slate-400 flex items-center">
                     {person.queue_1}
                   </p>

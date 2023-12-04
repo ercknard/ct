@@ -131,7 +131,7 @@ export default function Contact() {
                   >
                     Contact Us
                   </h2>
-                  <form>
+                  <form onSubmit={handleSubmit}>
                     <div className="mb-6">
                       <input
                         type="text"
@@ -212,7 +212,7 @@ export default function Contact() {
                         <p className="text-red-500">Subject cannot be empty.</p>
                       )}
                     </div>
-                    <div className="mb-6">
+                    <div>
                       <textarea
                         placeholder="Your Message"
                         name="message"
@@ -254,6 +254,7 @@ export default function Contact() {
                         hover:bg-opacity-90
                         text-lg
                         mb-4
+                        mt-4
                         "
                       >
                         Send Message
